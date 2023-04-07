@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ex03-2 XML -->
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="employees.xsd">
+    <employee pid="B123456789">
+        <name>張三</name>
+        <age>32</age>
+        <sex>男</sex>
+        <address>台中</address>
+    </employee>
+    <employee pid="P234567891">
+        <name>李四</name>
+        <age>22</age>
+        <sex>男</sex>
+        <address>新竹</address>
+    </employee>
+</employees>

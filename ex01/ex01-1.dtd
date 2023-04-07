@@ -1,0 +1,11 @@
+<!-- 
+    請問如果 mp3 元素擁有 item_no、model、price 和 memory 子元素，
+    item_no 和 model 只出現一次、price 為零到一次，memory 是零至多次，
+    請寫出 mp3 元素的 DTD 宣告。
+-->
+
+<!ELEMENT mp3 (item_no,model,price?,memory*)>
+<!ELEMENT item_no (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT memory (#PCDATA)>

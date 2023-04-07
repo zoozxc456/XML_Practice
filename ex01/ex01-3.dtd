@@ -1,0 +1,10 @@
+<!ELEMENT employees (employee*)>
+<!ELEMENT employee (name+,age?,sex,address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+
+<!ATTLIST employee 
+    id CDATA #REQUIRED
+>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="media" type="media_type" />
+    <xs:complexType name="media_type">
+        <xs:choice>
+            <xs:element name="paper" type="xs:string"></xs:element>
+            <xs:element name="CDROM" type="xs:string"></xs:element>
+            <xs:element name="E-file" type="xs:string"></xs:element>
+        </xs:choice>
+    </xs:complexType>
+</xs:schema>

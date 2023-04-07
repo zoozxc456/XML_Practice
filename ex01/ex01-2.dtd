@@ -1,0 +1,11 @@
+<!-- 
+   請問如果author元素擁有firstname、middlename和lastname屬性，
+   middlename 屬性可有可無，請寫出 author 元素屬性的 DTD 宣告。
+-->
+
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author 
+    firstname CDATA #REQUIRED
+    middlename CDATA #IMPLIED
+    lastname CDATA #REQUIRED
+>

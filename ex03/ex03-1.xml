@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="big5"?>
+<BookCatalogue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="ex03-1.xsd">
+  <Book category="Science" page="256">
+    <Title>The Universe in a Nutshell</Title>
+    <Author>Stephen Hawking</Author>
+    <Author>Lucy Hawking</Author>
+    <ReleaseDate>2001-11-06</ReleaseDate>
+    <Publisher city="London" address="Bantam Press">
+      <Country>United Kingdom</Country>
+      <Company>Transworld Publishers</Company>
+    </Publisher>
+  </Book>
+  <Book category="Fiction" page="240">
+    <Title>The Old Man and the Sea</Title>
+    <Author>Ernest Hemingway</Author>
+    <ReleaseDate>1952-09-01</ReleaseDate>
+    <Publisher city="New_York" address="Charles Scribners Sons">
+      <Country>United States</Country>
+      <Company>Simon &amp; Schuster</Company>
+    </Publisher>
+  </Book>
+</BookCatalogue>

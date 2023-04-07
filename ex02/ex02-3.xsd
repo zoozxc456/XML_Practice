@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:group name="mp3_group">
+        <xs:sequence>
+            <xs:element name="model" type="xs:string" />
+            <xs:element name="price" type="xs:string" />
+            <xs:element name="memory" type="xs:string" />
+        </xs:sequence>
+    </xs:group>
+    <xs:element name="mp3">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:group ref="mp3_group" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

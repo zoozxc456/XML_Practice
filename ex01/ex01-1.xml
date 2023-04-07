@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mp3 SYSTEM "ex01-1.dtd">
+<mp3>
+    <item_no>123</item_no>
+    <model>123</model>
+    <price>123</price>
+    <memory>123</memory>
+</mp3>

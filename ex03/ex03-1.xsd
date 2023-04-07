@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="big5"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="BookCatalogue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Book" type="Book_type" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+
+    </xs:element>
+
+    <xs:complexType name="Book_type">
+        <xs:sequence>
+            <xs:element name="Title"></xs:element>
+            <xs:element name="Author" type="Author_type" maxOccurs="unbounded" />
+            <xs:element name="ReleaseDate"></xs:element>
+            <xs:element name="ISBN" minOccurs="0" maxOccurs="1"></xs:element>
+            <xs:element name="Publisher" type="Publisher_type" />
+        </xs:sequence>
+        <xs:attribute name="category" type="xs:string" use="required"></xs:attribute>
+        <xs:attribute name="page" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Author_type">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="sex" default="男">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="男"></xs:enumeration>
+                            <xs:enumeration value="女"></xs:enumeration>
+                            <xs:enumeration value="male"></xs:enumeration>
+                            <xs:enumeration value="female"></xs:enumeration>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+                <xs:attribute name="mail" use="optional" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="Publisher_type">
+        <xs:sequence>
+            <xs:element name="Country"></xs:element>
+            <xs:element name="Company"></xs:element>
+        </xs:sequence>
+        <xs:attribute name="city" type="xs:NMTOKEN" default="Taipei"></xs:attribute>
+        <xs:attribute name="address" type="xs:NMTOKENS" use="required"></xs:attribute>
+    </xs:complexType>
+
+</xs:schema>

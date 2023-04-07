@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding=" UTF-8"?>
+<!DOCTYPE employees SYSTEM "ex01-3.dtd">
+<employees>
+    <employee id="1">
+        <name>張三</name>
+        <age>32</age>
+        <sex>男</sex>
+        <address>台中</address>
+    </employee>
+    <employee id="2">
+        <name>李四</name>
+        <age>22</age>
+        <sex>男</sex>
+        <address>新竹</address>
+    </employee>
+</employees> 

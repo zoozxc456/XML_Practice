@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- File name : inventory.xml -->
+<!-- ex03-4 XML -->
+<inventory xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="inventory-schema.xsd">
+    <book isbn="0-12-012507-8" inStock="yes">
+        <name> How to program in Java 3/e</name>
+        <price>USD88</price>
+        <quantity>300</quantity>
+    </book>
+    <book isbn="0-12-028418-5" inStock="no">
+        <name>XML and Web Service</name>
+        <price>USD68 </price>
+        <available>2015-12-15</available>
+    </book>
+</inventory>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Orders xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ex03-3.xsd">
+    <Order orderID="T01-P-011" orderDate="2016-5-19">
+        <name>Toy</name>
+        <number>426</number>
+        <city>Hsinchu</city>
+        <zip>301</zip>
+    </Order>
+    <Order orderID="T02-P-012" orderDate="2016-5-20">
+        <name>ToyBar</name>
+        <number>168</number>
+        <city>Taichung</city>
+        <zip>401</zip>
+    </Order>
+</Orders>
